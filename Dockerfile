@@ -1,16 +1,15 @@
-# Define a imagem base
 FROM python:3.9
 
-# Define o diretório de trabalho
 WORKDIR /app
 
 RUN pip install django
+# RUN pip install os
 
 COPY requirements.txt .
 
 RUN python -m pip install --upgrade pip
 
-RUN pip install --no-cache-dir -r code/requirements.txt
+# RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
 
@@ -20,7 +19,7 @@ ENV POSTGRES_USER=postgres \
     POSTGRES_PORT=5432 \
     POSTGRES_DB=mydatabase
 
-RUN python manage.py migrate
+# RUN python manage.py migrate
 
 EXPOSE 8000
 
