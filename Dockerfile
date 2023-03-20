@@ -3,7 +3,6 @@ FROM python:3.9
 WORKDIR /app
 
 RUN pip install django
-# RUN pip install os
 
 COPY requirements.txt .
 
@@ -19,7 +18,7 @@ ENV POSTGRES_USER=postgres \
     POSTGRES_PORT=5432 \
     POSTGRES_DB=mydatabase
 
-# RUN python manage.py migrate
+RUN python manage.py migrateclear
 
 EXPOSE 8000
 
