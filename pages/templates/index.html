@@ -1,116 +1,85 @@
+{% extends 'template.html' %} 
+
 {% load static %}
-<!DOCTYPE html>
-<html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    {% block title %}
-    <title>Fábrica de Software - Unifacvest</title>
-    {% endblock %}
+{% block css %} 
+<link rel="stylesheet" href="{% static 'css/index.css' %}" />
+{% endblock %} 
 
-    <!-- Font of Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
 
-    <!-- CSS default -->
-    <link rel="stylesheet" href="{% static 'css/reset.css' %}" />
-    <link rel="stylesheet" href="{% static 'css/index.css' %}" />
-
-    {% block css %}
+{% block content %}
+<div class="banner-wrapper">
+  <img src="{% static 'img/4a341-site_horarios_1200_2.png' %}" alt="horarios" />
+</div>
+<div class="about-container">
+    <h2>Sobre a nossa fabrica</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur recusandae suscipit laborum. Voluptas corrupti laboriosam harum, molestiae minus nisi explicabo voluptatibus itaque doloribus soluta dolorum nostrum aliquam magnam non rem.
+    Unde a quasi excepturi dolor suscipit perspiciatis veritatis, amet expedita pariatur adipisci quaerat repellendus explicabo dolorum veniam aperiam doloribus vel repudiandae, molestiae tempore dolorem recusandae! Excepturi dignissimos quidem eaque cupiditate!
+    Error ratione, autem similique earum voluptatibus nostrum quia est optio quos delectus doloremque animi perferendis! Voluptatum temporibus porro debitis culpa quas et, corrupti deleniti, hic dolore, atque accusamus minus excepturi.
+    Sequi eos ipsum, iusto optio ea, odit aliquam voluptas non saepe excepturi recusandae culpa autem dolor! Omnis cupiditate est corporis impedit magnam, vitae eaque at, dignissimos obcaecati natus, vel voluptatem.
+    Illum a assumenda quas quibusdam aspernatur expedita vel, quasi, atque recusandae totam excepturi voluptate, asperiores nostrum doloremque tempora rem ex eaque animi cupiditate obcaecati ab iste nemo mollitia. Accusamus, libero!
+    Consequuntur corrupti itaque ad placeat deleniti, totam quos laudantium. Veritatis quasi voluptatum animi, ratione alias, perferendis ut a deserunt repudiandae accusamus ipsum quae nemo atque labore, recusandae veniam quo qui?
+    Facilis ea modi, nemo adipisci natus rem aliquid, blanditiis eaque dolores nostrum iure! Voluptate dolores a soluta sed architecto ex. Sint dolorum suscipit molestias illum totam ullam cumque. Accusantium, nihil?
+    Ullam perspiciatis esse enim? Minima porro explicabo, aspernatur dignissimos perspiciatis, quisquam repudiandae reiciendis cupiditate amet atque molestiae adipisci non, excepturi rerum expedita ducimus voluptatum eos! Ad omnis totam quaerat sequi.</p>
+</div>
+<div class="projects-title" >
+    <h2>Projetos</h2>
+</div>
+<div class="projects-container dragscroll">
+    <div class="project-card">
+        <div class="project-image">
+            <img src="{% static 'img/pexels-pixabay-73910.jpg' %}" alt="horarios" />
+        </div>
+        <div class="project-description">
+            <h3>Mart-robot</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit amet quas libero ipsum nesciunt recusandae cupiditate quod labore quos! Commodi voluptatum in cupiditate doloremque fugiat ex, repellat atque necessitatibus error.</p>
+        </div>
+    </div>
+    <div class="project-card">
+        <div class="project-image">
+            <img src="{% static 'img/pexels-pixabay-73910.jpg' %}" alt="horarios" />
+        </div>
+        <div class="project-description">
+            <h3>Mart-robot</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit amet quas libero ipsum nesciunt recusandae cupiditate quod labore quos! Commodi voluptatum in cupiditate doloremque fugiat ex, repellat atque necessitatibus error.</p>
+        </div>
+    </div>
+    <div class="project-card">
+        <div class="project-image">
+            <img src="{% static 'img/pexels-pixabay-73910.jpg' %}" alt="horarios" />
+        </div>
+        <div class="project-description">
+            <h3>Mart-robot</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit amet quas libero ipsum nesciunt recusandae cupiditate quod labore quos! Commodi voluptatum in cupiditate doloremque fugiat ex, repellat atque necessitatibus error.</p>
+        </div>
+    </div>
+    <div class="project-card">
+        <div class="project-image">
+            <img src="{% static 'img/pexels-pixabay-73910.jpg' %}" alt="horarios" />
+        </div>
+        <div class="project-description">
+            <h3>Mart-robot</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit amet quas libero ipsum nesciunt recusandae cupiditate quod labore quos! Commodi voluptatum in cupiditate doloremque fugiat ex, repellat atque necessitatibus error.</p>
+        </div>
+    </div>
+    <div class="project-card">
+        <div class="project-image">
+            <img src="{% static 'img/pexels-pixabay-73910.jpg' %}" alt="horarios" />
+        </div>
+        <div class="project-description">
+            <h3>Mart-robot</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit amet quas libero ipsum nesciunt recusandae cupiditate quod labore quos! Commodi voluptatum in cupiditate doloremque fugiat ex, repellat atque necessitatibus error.</p>
+        </div>
+    </div>
+    <div class="project-card">
+        <div class="project-image">
+            <img src="{% static 'img/pexels-pixabay-73910.jpg' %}" alt="horarios" />
+        </div>
+        <div class="project-description">
+            <h3>Mart-robot</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit amet quas libero ipsum nesciunt recusandae cupiditate quod labore quos! Commodi voluptatum in cupiditate doloremque fugiat ex, repellat atque necessitatibus error.</p>
+        </div>
+    </div>
     
-    {% endblock %}
-  </head>
-  <body>
-    <header class="header-container">
-      <div class="header-mobile-section-icons">
-        <span>1</span>
-        <span>2</span>
-        <span>3</span>
-        <span>4</span>
-      </div>
-
-      <div class="header-address-section">
-        <p>
-          Av. Mal. Floriano, 947 - Centro - CEP 88503-190 - Lages / SC -
-          <a href="#">(49)3225-4114</a>
-        </p>
-      </div>
-
-      <div class="navbar-main">
-        <img src="{% static 'img/logo-header.png' %}" alt="unifacvest" />
-
-        <nav>
-          <a href="#">graduação</a>
-          <a href="#">pós-graduação</a>
-          <a href="#">mestrado e doutorado</a>
-          <a href="#">institucional</a>
-          <a href="#">biblioteca</a>
-          <a href="#">pesquisa e extensão</a>
-          <a href="#">ja sou aluno</a>
-        </nav>
-      </div>
-
-      <div class="shortcut-links-container">
-        <a href="#" target="_blank">
-          <i class="fa-brands fa-square-facebook"></i>
-        </a>
-        <a href="#" target="_blank">
-          <i class="fa-brands fa-square-facebook"></i>
-        </a>
-      </div>
-    </header>
-
-    {% block content %}
-    <div style="width: 100vw; height: 700px"></div>
-    {% endblock %}
-
-    <div class="footer-wrapper">
-      <div class="footer-section">
-        <img class="footer-logo" src="{% static 'img/logo-footer.png' %}" alt="unifacvest" />
-        <p>
-          Estar entre as melhores universidade privadas do Brasil nos motiva e
-          desafia a oferecer serviços de excelência com responsabilidade social.
-        </p>
-        <img class="qrcode-mec" src="{% static 'img/0011QRCODE-e-MEC.png' %}" alt="MEC" />
-      </div>
-      <div class="footer-section">
-        <h2>ENTRE EM CONTATO</h2>
-        <p>(49)3225-4114</p>
-        <p>Av. Mal. Floriano, 947 - Centro - CEP 88503-190 - Lages / SC</p>
-      </div>
-      <div class="footer-section">
-        <h2>LINKS UNIFACVEST CARE</h2>
-        <p>Campus Central Unifacvest (49) 3225-4114</p>
-        <p>Clínica Odontológica (49) 3018-7014</p>
-        <p>Clínica Radiológica (49) 99184-4662</p>
-        <p>Clínica de Fisioterapia (49) 3018-1444</p>
-        <p>Clínica Veterinária (49) 3018-7812</p>
-        <p>Clínica de Nutrição (49) 3380-9530</p>
-        <p>Cidadania (49) 99194-8132 (Jurídico e Psicológico)</p>
-        <p>Unifacvest Card Interativo</p>
-      </div>
-      <div class="footer-section">
-        <h2>CURSOS EM DESTAQUE</h2>
-        <p>Administração</p>
-        <p>Educação Física</p>
-        <p>Pedagogia</p>
-        <p>Ciências Contábeis</p>
-      </div>
-    </div>
-    <div class="footer-line">
-      <p>
-        Centro Universitário Unifacvest © 2023 - Todos os direitos reservados.
-      </p>
-    </div>
-
-    {% block js %}
-
-    {% endblock %}
-  </body>
-</html>
+</div>
+{% endblock %}
